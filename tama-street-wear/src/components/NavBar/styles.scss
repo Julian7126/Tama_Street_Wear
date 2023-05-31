@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-left: 350px;   
+    margin-left: 350px;
   }
   
   .right_items {
@@ -20,6 +20,7 @@
     gap: 30px;
     margin-right: 80px;
   }
+  
   .right_items ul {
     display: inline-block;
   }
@@ -51,4 +52,3 @@
   li:hover {
     color: #f50057;
   }
-  
