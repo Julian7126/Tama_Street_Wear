@@ -1,18 +1,9 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 import images from "../../assets/img.js";
 import "./styles.scss";
 
 const Home = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+
 
   return (
     <>
@@ -34,7 +25,7 @@ const Home = () => {
           <div className="container_nextDrop"></div>
 
           <div className="container_img_local">
-            <Slider {...settings}>
+            
               <div>
                 <img className="img" src={images.imgLocal1} alt="" />
               </div>
@@ -47,7 +38,13 @@ const Home = () => {
               <div>
                 <img className="img" src={images.imgLocal4} alt="" />
               </div>
-            </Slider>
+              <div>
+                <img className="img" src={images.imgLocal5} alt="" />
+              </div>
+              <div>
+                <img className="img" src={images.imgLocal6} alt="" />
+              </div>
+            
             
           </div>
         </div>

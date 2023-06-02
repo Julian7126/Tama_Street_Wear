@@ -4,6 +4,8 @@ import img1 from "./Local.png";
 import img2 from "./Local2.png";
 import img3 from "./Local3.png";
 import img4 from "./Local4.png";
+import img5 from "./Local5.png";
+import img6 from "./Local6.png";
 
 const images = {
   img1: Fondo1,
@@ -12,6 +14,8 @@ const images = {
   imgLocal2: img2,
   imgLocal3: img3,
   imgLocal4: img4,
+  imgLocal5: img5,
+  imgLocal6: img6,
 };
 
 export default images;

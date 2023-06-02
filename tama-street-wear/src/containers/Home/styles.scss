@@ -1,3 +1,11 @@
+.container_home {
+  background-image: url('../../assets/Fondo del Home.png');
+
+}
+
+
+
+
 .contenedor_img {
   box-sizing: border-box;
   width: 100%;
@@ -22,6 +30,7 @@
 }
 
 .What_are_you_Looking {
+  
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -38,7 +47,7 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: #000000;
+    color: #f3f3f3;
   }
 
   h2 {
@@ -51,7 +60,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #000000;
+    color: #f6f6f6;
   }
 
   .grayButton {
@@ -60,6 +69,7 @@
     align-items: flex-start;
     padding: 7.5px 21.875px 7.5px 21.5px;
     font-size: 15px;
+    
 
     position: absolute;
     width: 241px;
@@ -77,70 +87,45 @@
 }
 
 .container_img_local {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.slick-slider {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  outline: none;
-}
+  gap: 30px;
+  margin-top: 100px;
+  margin-block-end: 100px;
+ 
 
-.slick-list {
-  position: relative;
-  display: block;
-  overflow:visible;
-  margin: 0;
-  padding: 0;
-}
+  div {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: calc(0.2s * var(--index));
 
-.slick-track {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 1300px; /* Ajusta la altura según tus necesidades */
-}
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
 
-.slick-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  outline: none;
-}
-.slick-slide img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  
 
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: gray;
-  color: white;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  z-index: 1;
-  transition: background-color 0.3s ease;
-}
-
-.slick-arrow:hover {
-  background-color: rgb(92, 92, 92);
-}
-
-.slick-prev {
-  left: 10px;
-}
-
-.slick-next {
-  right: 10px;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
