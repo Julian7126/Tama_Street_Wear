@@ -6,6 +6,10 @@ import img3 from "./Local3.png";
 import img4 from "./Local4.png";
 import img5 from "./Local5.png";
 import img6 from "./Local6.png";
+import NuevoDrop1 from "./Nuevo Drop 1.png";
+import NuevoDrop2 from "./Nuevo Drop 2.png";
+import NuevoDrop from "./Nuevo Drop.png";
+
 
 const images = {
   img1: Fondo1,
@@ -16,6 +20,9 @@ const images = {
   imgLocal4: img4,
   imgLocal5: img5,
   imgLocal6: img6,
+  newDrop1: NuevoDrop1,
+  newDrop2: NuevoDrop2,
+  newDrop: NuevoDrop, 
 };
 
 export default images;

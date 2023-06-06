@@ -1,5 +1,8 @@
 import React from 'react';
 import '../NavBar/styles.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+
 
 const NavBar = () => {
   return (
@@ -16,6 +19,7 @@ const NavBar = () => {
           <li>About Us</li>
         </ul>
         <input type="text" placeholder="Search" className="search_bar" />
+        <FontAwesomeIcon icon={faCartShopping} />
       </div>
     </div>
   );
