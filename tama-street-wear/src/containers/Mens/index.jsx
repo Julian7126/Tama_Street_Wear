@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import "./styles.scss";
 
 const Mens = () => {
@@ -15,7 +15,8 @@ const Mens = () => {
 
 
   return (
-    <div>Mens</div>
+    <div className='MensContainer'>
+    </div>
   )
 }
 

@@ -3,7 +3,18 @@ import "./styles.scss";
 
 const Womans = () => {
   return (
-    <div>Womans</div>
+    <div className='WomanContainer'>
+
+
+      <h1>Woman</h1>
+      <h1>Woman</h1>
+      <h1>Woman</h1>
+      <h1>Woman</h1>
+      <h1>Woman</h1>
+      <h1>Woman</h1>
+      
+      
+    </div>
   )
 }
 
