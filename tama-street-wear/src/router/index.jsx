@@ -7,6 +7,7 @@ import Womans from "../containers/Womans";
 import SKNKS from "../containers/SKNKS";
 import Accesories from "../containers/Accesories";
 import AboutUs from "../containers/AboutUs";
+import ItemDetailContainer from "../containers/ItemDetailContainer";
 
 const router = createBrowserRouter([
   {
@@ -19,25 +20,31 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "/Mens",
+        path: "/mens",
         element: <Mens/>,
       },
       {
-        path: "/Womans",
+        path: "/womans",
         element: <Womans/>,
       },
       {
-        path: "/Accesories",
+        path: "/accesories",
         element: <Accesories/>,
       },
       {
-        path: "/SKNKS",
+        path: "/sknks",
         element: <SKNKS/>,
       },
       {
-        path: "/AboutUs",
+        path: "/aboutUs",
         element: <AboutUs/>,
       },
+      {
+        path: "/detail/:id",
+        element: <ItemDetailContainer/>
+     
+      },
+
 
     ],
   },
