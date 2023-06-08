@@ -1,0 +1,33 @@
+.ItemListContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/Local4.png");
+  filter: brightness(
+    0.5
+  ); /* Ajusta el valor entre 0 y 1 para controlar la exposición */
+  z-index: -1;
+  
+}
+
+.ItemListContainer {
+    
+  position: relative;
+  color: white;
+ 
+}
+
+.slider-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // Dos columnas con igual tamaño
+  gap: 140px; // Espacio entre los elementos
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; // Una columna en dispositivos móviles
+  }
+}

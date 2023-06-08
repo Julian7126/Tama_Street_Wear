@@ -27,7 +27,7 @@
 
 .right_items ul li {
   display: inline-block;
-  margin-right: 10px; /* Ajusta el espacio entre los elementos si es necesario */
+  margin-right: 10px;
 }
 
 .search_bar {
@@ -47,8 +47,12 @@ li {
   font-weight: bold;
   color: black;
   transition: color 0.2s ease-in-out;
+  text-decoration: none;
 }
 
-li:hover {
+li:hover,
+li:active,
+li:focus {
   color: #f50057;
+  outline: none;
 }/*# sourceMappingURL=styles.css.map */

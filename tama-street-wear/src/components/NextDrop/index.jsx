@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./styles.scss";
+
 import { rawNewDropItems } from "../../data/productsNextDrop";
 
 const NewDrop = () => {
@@ -36,8 +37,12 @@ const NewDrop = () => {
 
   }, []);
 
+
+
   return (
     <>
+      
+
       {productsNextDrop.map((item) => (
         <div key={item.id} className="new-drop-container">
           <img src={item.image} alt="Artículo" />
@@ -46,7 +51,8 @@ const NewDrop = () => {
             <p className="item-price">Precio: ${item.price}</p>
           </div>
         </div>
-      ))}
+          ))}
+   
     </>
   );
 };

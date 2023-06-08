@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container_home {
   background-image: url("../../assets/Fondo del Home.png");
 }
@@ -58,9 +59,11 @@
 .What_are_you_Looking .grayButton {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 7.5px 21.875px 7.5px 21.5px;
   font-size: 15px;
+  font-weight: bold; /* Letra en negrita */
   position: absolute;
   width: 241px;
   height: 39px;
@@ -68,6 +71,10 @@
   top: 128px;
   background: #cac7c7;
   border-radius: 30px;
+  transition: transform 0.3s ease; /* Animación de transformación */
+}
+.What_are_you_Looking .grayButton:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del botón en un 10% al pasar el cursor sobre él */
 }
 
 .container_img_local {
@@ -108,4 +115,15 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.container_nextDrop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

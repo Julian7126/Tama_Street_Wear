@@ -2,12 +2,9 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "../components/Root";
 import Home from "../containers/Home";
-import Mens from "../containers/Mens";
-import Womans from "../containers/Womans";
-import SKNKS from "../containers/SKNKS";
-import Accesories from "../containers/Accesories";
 import AboutUs from "../containers/AboutUs";
 import ItemDetailContainer from "../containers/ItemDetailContainer";
+import ItemListContainer from "../containers/ItemListContainer";
 
 const router = createBrowserRouter([
   {
@@ -20,31 +17,20 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "/mens",
-        element: <Mens/>,
+        path: "/category/:categoryId",
+        element: <ItemListContainer/>,
       },
+    
       {
-        path: "/womans",
-        element: <Womans/>,
+        path: "/detail/:id",
+        element: <ItemDetailContainer/>
+        
       },
-      {
-        path: "/accesories",
-        element: <Accesories/>,
-      },
-      {
-        path: "/sknks",
-        element: <SKNKS/>,
-      },
+      
       {
         path: "/aboutUs",
         element: <AboutUs/>,
       },
-      {
-        path: "/detail/:id",
-        element: <ItemDetailContainer/>
-     
-      },
-
 
     ],
   },
