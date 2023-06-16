@@ -1,5 +1,5 @@
 .container_home {
-  background-image: url('../../assets/Fondo del Home.png');
+  background-image: url('../../assets/Fondo\ del\ Home.png');
   
 
 }
@@ -88,6 +88,32 @@
   }
   
 }
+
+.rendirectToMaps{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 7.5px 21.875px 7.5px 21.5px;
+  font-size: 15px;
+  font-weight: bold; /* Letra en negrita */
+
+  position: absolute;
+  width: 455px;
+  height: 39px;
+  left: calc(50% - 151px / 2 - 180.5px);
+  top: 128px;
+
+  background: #cac7c7;
+  border-radius: 30px;
+  transition: transform 0.3s ease; /* Animación de transformación */
+
+  &:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón en un 10% al pasar el cursor sobre él */
+  }
+
+}
+
 
 
 .container_img_local {

@@ -40,9 +40,9 @@ const Home = () => {
                 Where do you find us?
               </button>
             ) : (
-              <h2 onClick={redirectToMaps}>
+              <button className="rendirectToMaps" onClick={redirectToMaps}>
                 Redirecting to Google Maps... click here!!
-              </h2>
+              </button>
             )}
           </div>
 

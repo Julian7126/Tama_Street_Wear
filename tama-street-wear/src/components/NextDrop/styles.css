@@ -61,4 +61,7 @@
     text-align: left;
     margin-left: 20px;
   }
+}
+.new-drop-container.fade-in {
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */

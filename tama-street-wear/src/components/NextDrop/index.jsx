@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./styles.scss";
-
 import { rawNewDropItems } from "../../data/productsNextDrop";
 
 const NewDrop = () => {
 
 
   const [ productsNextDrop , setProductsNext]= useState([]);
-
-
-
-
-
 
   useEffect(() => {
     
@@ -21,7 +15,7 @@ const NewDrop = () => {
         return new Promise((resolve,reject)=>{
           setTimeout(()=>{
             resolve(rawNewDropItems)
-          }, 2000);
+          }, 1000);
         })
       }
 

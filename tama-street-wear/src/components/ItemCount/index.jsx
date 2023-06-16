@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import "./styles.scss";
 
-const ItemCount = ({ stock, onAdd }) => {
-  const [count, setCount] = useState(0);
+const ItemCount = ({ stock, onAdd, initial }) => {
+  
+  const [count, setCount] = useState(initial);
 
   const handleIncrement = () => {
     if (count < stock) {
@@ -16,17 +17,13 @@ const ItemCount = ({ stock, onAdd }) => {
     }
   };
 
-  const handleAdd = () => {
-    onAdd(count);
-  };
-
   return (
     <div>
       <button onClick={handleDecrement}>-</button>
       <span>{count}</span>
       <button onClick={handleIncrement}>+</button>
-      <button onClick={handleAdd} >
-        Agregar al carrito
+      <button className="add-to-cart-button animated-button" onClick={()=>onAdd(count)} >
+       Buy Now!
       </button>
     </div>
   );

@@ -5,6 +5,7 @@ import Home from "../containers/Home";
 import AboutUs from "../containers/AboutUs";
 import ItemDetailContainer from "../containers/ItemDetailContainer";
 import ItemListContainer from "../containers/ItemListContainer";
+import ItemTrolleyContainer  from "../containers/ItemTrolleyContainer";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,12 @@ const router = createBrowserRouter([
         path: "/aboutUs",
         element: <AboutUs/>,
       },
+      {
+        path:"/cart",
+        element: <ItemTrolleyContainer/>
+
+
+    },
 
     ],
   },

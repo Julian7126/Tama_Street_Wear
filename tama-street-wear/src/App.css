@@ -4,6 +4,23 @@
   box-sizing: border-box;
   font-family: 'Roboto Mono', monospace;
   position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #ef0202e3 #ffffff;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #000000;
+  }
+
+
+
+
 
   
 }
