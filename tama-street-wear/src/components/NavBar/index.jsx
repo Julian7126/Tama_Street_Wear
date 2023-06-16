@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import './styles.scss';
+import CartWidget from '../CartWidget';
 
 const NavBar = () => {
   return (
@@ -22,11 +21,10 @@ const NavBar = () => {
       </div>
       <div className="right_items">
         <ul>
-          <li>Sale</li>
           <li><Link to="/aboutUs">About Us</Link></li>
         </ul>
         <input type="text" placeholder="Search" className="search_bar" />
-        <FontAwesomeIcon icon={faCartShopping} className="cart_icon" />
+        <CartWidget/>
       </div>
     </div>
   );

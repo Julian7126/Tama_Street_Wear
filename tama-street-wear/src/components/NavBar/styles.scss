@@ -12,6 +12,7 @@
   align-items: center;
   gap: 40px;
   list-style: none;
+  margin-top: 12px;
 }
 
 .left_items ul li.Home {
@@ -24,6 +25,7 @@
   gap: 40px;
   justify-content: center;
   list-style: none;
+  margin-top: 12px;
 }
 
 .right_items {
@@ -36,10 +38,10 @@
 .right_items ul {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .right_items ul li {
@@ -47,6 +49,15 @@
   font-weight: bold;
   color: black;
   transition: color 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.right_items ul li.no-list-style {
+  list-style: none;
+}
+
+.right_items ul li a {
+  color: inherit;
   text-decoration: none;
 }
 

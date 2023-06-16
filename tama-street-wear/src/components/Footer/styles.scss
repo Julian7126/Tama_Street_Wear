@@ -2,24 +2,29 @@
   background-color: rgb(34, 34, 34);
   color: white;
   padding: 20px;
-  height: 200px;
+  height: 70px;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  flex-direction: row;
 }
-
 
 .footer-content {
   display: flex;
   align-items: flex-start;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .left-section {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 10px;
 }
 
@@ -33,14 +38,40 @@
   margin-right: 10px;
 }
 
+.location-text h3 {
+  margin: 0;
+}
+
+.center-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.center-text {
+  color: white;
+  font-size: 14px;
+}
+
 .contact {
   display: flex;
   align-items: center;
 }
 
+.contact-icon {
+  margin-right: 10px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .right-section {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  margin-left: auto;
 }
 
 .social-icons {
@@ -62,3 +93,34 @@
 .social-icon:hover {
   color: #f50057;
 }
+
+.non-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Estilos para la transición */
+.footer-content,
+.left-section,
+.center-section,
+.right-section,
+.location,
+.contact,
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor sobre los elementos */
+.footer-content:hover,
+.left-section:hover,
+.center-section:hover,
+.right-section:hover,
+.location:hover,
+.contact:hover,
+.social-icon:hover {
+  transform: scale(1.01); /* Escala el elemento al 102% */
+  color: red; /* Cambia el color del texto a rojo */
+}
+
+/* Otros estilos adicionales que desees aplicar */

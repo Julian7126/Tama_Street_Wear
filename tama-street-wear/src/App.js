@@ -11,7 +11,8 @@ function App() {
 
     <Modal/>
 
-      </ShopProvider>
+      </ShopProvider> 
+    
     </div>
   );
 }
